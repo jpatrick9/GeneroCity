@@ -1,0 +1,679 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3584CA836BFDEBB64E6476F0 /* Pods_Generocity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B24632AA36B8DF067E26D3E9 /* Pods_Generocity.framework */; };
+		FA4327CA1FC4DF43007C9049 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FA4327C91FC4DF43007C9049 /* GoogleService-Info.plist */; };
+		FA4902BF1FC745D900ED15C9 /* UserMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4902BE1FC745D900ED15C9 /* UserMap.swift */; };
+		FA6C77341FC526E600B318D1 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = FA6C77331FC526E500B318D1 /* Settings.bundle */; };
+		FA9261EE1FC643F5000E3F62 /* SplashScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9261ED1FC643F5000E3F62 /* SplashScreen.swift */; };
+		FA9261F21FC65DB3000E3F62 /* Comp1.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = FA9261F11FC65DB3000E3F62 /* Comp1.mp4 */; };
+		FA9261F41FC65E6C000E3F62 /* Dashboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9261F31FC65E6C000E3F62 /* Dashboard.swift */; };
+		FAD816241FC4D8D900F959DD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD816231FC4D8D900F959DD /* AppDelegate.swift */; };
+		FAD816261FC4D8D900F959DD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD816251FC4D8D900F959DD /* ViewController.swift */; };
+		FAD816291FC4D8D900F959DD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAD816271FC4D8D900F959DD /* Main.storyboard */; };
+		FAD8162B1FC4D8D900F959DD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAD8162A1FC4D8D900F959DD /* Assets.xcassets */; };
+		FAD8162E1FC4D8D900F959DD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAD8162C1FC4D8D900F959DD /* LaunchScreen.storyboard */; };
+		FAD816391FC4D8D900F959DD /* GenerocityTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD816381FC4D8D900F959DD /* GenerocityTests.swift */; };
+		FAD816441FC4D8D900F959DD /* GenerocityUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD816431FC4D8D900F959DD /* GenerocityUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FAD816351FC4D8D900F959DD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FAD816181FC4D8D900F959DD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FAD8161F1FC4D8D900F959DD;
+			remoteInfo = Generocity;
+		};
+		FAD816401FC4D8D900F959DD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FAD816181FC4D8D900F959DD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FAD8161F1FC4D8D900F959DD;
+			remoteInfo = Generocity;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		6EACCF898CC7B081406FD806 /* Pods-Generocity.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Generocity.release.xcconfig"; path = "Pods/Target Support Files/Pods-Generocity/Pods-Generocity.release.xcconfig"; sourceTree = "<group>"; };
+		9064F425192FBD7B9CED2DA3 /* Pods-Generocity.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Generocity.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Generocity/Pods-Generocity.debug.xcconfig"; sourceTree = "<group>"; };
+		B24632AA36B8DF067E26D3E9 /* Pods_Generocity.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Generocity.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA4327C91FC4DF43007C9049 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		FA4902BE1FC745D900ED15C9 /* UserMap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserMap.swift; sourceTree = "<group>"; };
+		FA6C77331FC526E500B318D1 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
+		FA9261ED1FC643F5000E3F62 /* SplashScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplashScreen.swift; sourceTree = "<group>"; };
+		FA9261F11FC65DB3000E3F62 /* Comp1.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Comp1.mp4; sourceTree = "<group>"; };
+		FA9261F31FC65E6C000E3F62 /* Dashboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Dashboard.swift; path = ../Dashboard.swift; sourceTree = "<group>"; };
+		FAD816201FC4D8D900F959DD /* Generocity.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Generocity.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FAD816231FC4D8D900F959DD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FAD816251FC4D8D900F959DD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FAD816281FC4D8D900F959DD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FAD8162A1FC4D8D900F959DD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FAD8162D1FC4D8D900F959DD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FAD8162F1FC4D8D900F959DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FAD816341FC4D8D900F959DD /* GenerocityTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GenerocityTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FAD816381FC4D8D900F959DD /* GenerocityTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenerocityTests.swift; sourceTree = "<group>"; };
+		FAD8163A1FC4D8D900F959DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FAD8163F1FC4D8D900F959DD /* GenerocityUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GenerocityUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FAD816431FC4D8D900F959DD /* GenerocityUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenerocityUITests.swift; sourceTree = "<group>"; };
+		FAD816451FC4D8D900F959DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FAD8161D1FC4D8D900F959DD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3584CA836BFDEBB64E6476F0 /* Pods_Generocity.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAD816311FC4D8D900F959DD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAD8163C1FC4D8D900F959DD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		00E849A2FEA39DB06783DA60 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9064F425192FBD7B9CED2DA3 /* Pods-Generocity.debug.xcconfig */,
+				6EACCF898CC7B081406FD806 /* Pods-Generocity.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		6A6CD80D257D46348664D1F1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B24632AA36B8DF067E26D3E9 /* Pods_Generocity.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FAD816171FC4D8D900F959DD = {
+			isa = PBXGroup;
+			children = (
+				FAD816221FC4D8D900F959DD /* Generocity */,
+				FAD816371FC4D8D900F959DD /* GenerocityTests */,
+				FAD816421FC4D8D900F959DD /* GenerocityUITests */,
+				FAD816211FC4D8D900F959DD /* Products */,
+				00E849A2FEA39DB06783DA60 /* Pods */,
+				6A6CD80D257D46348664D1F1 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		FAD816211FC4D8D900F959DD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FAD816201FC4D8D900F959DD /* Generocity.app */,
+				FAD816341FC4D8D900F959DD /* GenerocityTests.xctest */,
+				FAD8163F1FC4D8D900F959DD /* GenerocityUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FAD816221FC4D8D900F959DD /* Generocity */ = {
+			isa = PBXGroup;
+			children = (
+				FA9261F11FC65DB3000E3F62 /* Comp1.mp4 */,
+				FAD816231FC4D8D900F959DD /* AppDelegate.swift */,
+				FA9261F31FC65E6C000E3F62 /* Dashboard.swift */,
+				FAD816251FC4D8D900F959DD /* ViewController.swift */,
+				FA4327C91FC4DF43007C9049 /* GoogleService-Info.plist */,
+				FA6C77331FC526E500B318D1 /* Settings.bundle */,
+				FAD816271FC4D8D900F959DD /* Main.storyboard */,
+				FA4902BE1FC745D900ED15C9 /* UserMap.swift */,
+				FA9261ED1FC643F5000E3F62 /* SplashScreen.swift */,
+				FAD8162A1FC4D8D900F959DD /* Assets.xcassets */,
+				FAD8162C1FC4D8D900F959DD /* LaunchScreen.storyboard */,
+				FAD8162F1FC4D8D900F959DD /* Info.plist */,
+			);
+			path = Generocity;
+			sourceTree = "<group>";
+		};
+		FAD816371FC4D8D900F959DD /* GenerocityTests */ = {
+			isa = PBXGroup;
+			children = (
+				FAD816381FC4D8D900F959DD /* GenerocityTests.swift */,
+				FAD8163A1FC4D8D900F959DD /* Info.plist */,
+			);
+			path = GenerocityTests;
+			sourceTree = "<group>";
+		};
+		FAD816421FC4D8D900F959DD /* GenerocityUITests */ = {
+			isa = PBXGroup;
+			children = (
+				FAD816431FC4D8D900F959DD /* GenerocityUITests.swift */,
+				FAD816451FC4D8D900F959DD /* Info.plist */,
+			);
+			path = GenerocityUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FAD8161F1FC4D8D900F959DD /* Generocity */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FAD816481FC4D8D900F959DD /* Build configuration list for PBXNativeTarget "Generocity" */;
+			buildPhases = (
+				3D0C0D18AB31510B6D4F80AB /* [CP] Check Pods Manifest.lock */,
+				FAD8161C1FC4D8D900F959DD /* Sources */,
+				FAD8161D1FC4D8D900F959DD /* Frameworks */,
+				FAD8161E1FC4D8D900F959DD /* Resources */,
+				8C4E60A2CE9C51B083348CF5 /* [CP] Embed Pods Frameworks */,
+				DD92D2123155C9733159F912 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Generocity;
+			productName = Generocity;
+			productReference = FAD816201FC4D8D900F959DD /* Generocity.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FAD816331FC4D8D900F959DD /* GenerocityTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FAD8164B1FC4D8D900F959DD /* Build configuration list for PBXNativeTarget "GenerocityTests" */;
+			buildPhases = (
+				FAD816301FC4D8D900F959DD /* Sources */,
+				FAD816311FC4D8D900F959DD /* Frameworks */,
+				FAD816321FC4D8D900F959DD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FAD816361FC4D8D900F959DD /* PBXTargetDependency */,
+			);
+			name = GenerocityTests;
+			productName = GenerocityTests;
+			productReference = FAD816341FC4D8D900F959DD /* GenerocityTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FAD8163E1FC4D8D900F959DD /* GenerocityUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FAD8164E1FC4D8D900F959DD /* Build configuration list for PBXNativeTarget "GenerocityUITests" */;
+			buildPhases = (
+				FAD8163B1FC4D8D900F959DD /* Sources */,
+				FAD8163C1FC4D8D900F959DD /* Frameworks */,
+				FAD8163D1FC4D8D900F959DD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FAD816411FC4D8D900F959DD /* PBXTargetDependency */,
+			);
+			name = GenerocityUITests;
+			productName = GenerocityUITests;
+			productReference = FAD8163F1FC4D8D900F959DD /* GenerocityUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FAD816181FC4D8D900F959DD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				KnownAssetTags = (
+					New,
+				);
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Dante  Lacey-Thompson";
+				TargetAttributes = {
+					FAD8161F1FC4D8D900F959DD = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 53SJXKK42P;
+						LastSwiftMigration = 0830;
+						ProvisioningStyle = Automatic;
+					};
+					FAD816331FC4D8D900F959DD = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+						TestTargetID = FAD8161F1FC4D8D900F959DD;
+					};
+					FAD8163E1FC4D8D900F959DD = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+						TestTargetID = FAD8161F1FC4D8D900F959DD;
+					};
+				};
+			};
+			buildConfigurationList = FAD8161B1FC4D8D900F959DD /* Build configuration list for PBXProject "Generocity" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FAD816171FC4D8D900F959DD;
+			productRefGroup = FAD816211FC4D8D900F959DD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FAD8161F1FC4D8D900F959DD /* Generocity */,
+				FAD816331FC4D8D900F959DD /* GenerocityTests */,
+				FAD8163E1FC4D8D900F959DD /* GenerocityUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FAD8161E1FC4D8D900F959DD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAD8162E1FC4D8D900F959DD /* LaunchScreen.storyboard in Resources */,
+				FA4327CA1FC4DF43007C9049 /* GoogleService-Info.plist in Resources */,
+				FA6C77341FC526E600B318D1 /* Settings.bundle in Resources */,
+				FAD8162B1FC4D8D900F959DD /* Assets.xcassets in Resources */,
+				FA9261F21FC65DB3000E3F62 /* Comp1.mp4 in Resources */,
+				FAD816291FC4D8D900F959DD /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAD816321FC4D8D900F959DD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAD8163D1FC4D8D900F959DD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3D0C0D18AB31510B6D4F80AB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Generocity-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8C4E60A2CE9C51B083348CF5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Generocity/Pods-Generocity-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/Player/Player.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftKeychainWrapper/SwiftKeychainWrapper.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Player.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftKeychainWrapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Generocity/Pods-Generocity-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DD92D2123155C9733159F912 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Generocity/Pods-Generocity-resources.sh",
+				"${PODS_ROOT}/GoogleAuthUtilities/Frameworks/frameworks/GoogleAuthUtilities.framework/Resources/GTMOAuth2ViewTouch.xib",
+				"${PODS_ROOT}/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle",
+				"${PODS_ROOT}/GooglePlacePicker/Frameworks/GooglePlacePicker.framework/Resources/GooglePlacePicker.bundle",
+				"${PODS_ROOT}/GooglePlaces/Frameworks/GooglePlaces.framework/Resources/GooglePlaces.bundle",
+				"${PODS_ROOT}/GoogleSignIn/Resources/GoogleSignIn.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Generocity/Pods-Generocity-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FAD8161C1FC4D8D900F959DD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA9261EE1FC643F5000E3F62 /* SplashScreen.swift in Sources */,
+				FAD816261FC4D8D900F959DD /* ViewController.swift in Sources */,
+				FA9261F41FC65E6C000E3F62 /* Dashboard.swift in Sources */,
+				FAD816241FC4D8D900F959DD /* AppDelegate.swift in Sources */,
+				FA4902BF1FC745D900ED15C9 /* UserMap.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAD816301FC4D8D900F959DD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAD816391FC4D8D900F959DD /* GenerocityTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAD8163B1FC4D8D900F959DD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAD816441FC4D8D900F959DD /* GenerocityUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FAD816361FC4D8D900F959DD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FAD8161F1FC4D8D900F959DD /* Generocity */;
+			targetProxy = FAD816351FC4D8D900F959DD /* PBXContainerItemProxy */;
+		};
+		FAD816411FC4D8D900F959DD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FAD8161F1FC4D8D900F959DD /* Generocity */;
+			targetProxy = FAD816401FC4D8D900F959DD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FAD816271FC4D8D900F959DD /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FAD816281FC4D8D900F959DD /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FAD8162C1FC4D8D900F959DD /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FAD8162D1FC4D8D900F959DD /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FAD816461FC4D8D900F959DD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FAD816471FC4D8D900F959DD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FAD816491FC4D8D900F959DD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9064F425192FBD7B9CED2DA3 /* Pods-Generocity.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 53SJXKK42P;
+				INFOPLIST_FILE = Generocity/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.dantelaceythompson.Generocity;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_INSTALL_OBJC_HEADER = NO;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		FAD8164A1FC4D8D900F959DD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6EACCF898CC7B081406FD806 /* Pods-Generocity.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 53SJXKK42P;
+				INFOPLIST_FILE = Generocity/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.dantelaceythompson.Generocity;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_INSTALL_OBJC_HEADER = NO;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		FAD8164C1FC4D8D900F959DD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = GenerocityTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = dantelaceythompson.GenerocityTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Generocity.app/Generocity";
+			};
+			name = Debug;
+		};
+		FAD8164D1FC4D8D900F959DD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = GenerocityTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = dantelaceythompson.GenerocityTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Generocity.app/Generocity";
+			};
+			name = Release;
+		};
+		FAD8164F1FC4D8D900F959DD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = GenerocityUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = dantelaceythompson.GenerocityUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = Generocity;
+			};
+			name = Debug;
+		};
+		FAD816501FC4D8D900F959DD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = GenerocityUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = dantelaceythompson.GenerocityUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = Generocity;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FAD8161B1FC4D8D900F959DD /* Build configuration list for PBXProject "Generocity" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAD816461FC4D8D900F959DD /* Debug */,
+				FAD816471FC4D8D900F959DD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FAD816481FC4D8D900F959DD /* Build configuration list for PBXNativeTarget "Generocity" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAD816491FC4D8D900F959DD /* Debug */,
+				FAD8164A1FC4D8D900F959DD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FAD8164B1FC4D8D900F959DD /* Build configuration list for PBXNativeTarget "GenerocityTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAD8164C1FC4D8D900F959DD /* Debug */,
+				FAD8164D1FC4D8D900F959DD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FAD8164E1FC4D8D900F959DD /* Build configuration list for PBXNativeTarget "GenerocityUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAD8164F1FC4D8D900F959DD /* Debug */,
+				FAD816501FC4D8D900F959DD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FAD816181FC4D8D900F959DD /* Project object */;
+}

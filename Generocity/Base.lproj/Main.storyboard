@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G1036" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Generocity" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <connections>
+                        <segue destination="RNo-0T-t0H" kind="show" identifier="showSplash" id="B6s-h8-x5j"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+        <!--Splash Screen-->
+        <scene sceneID="jsu-Tc-iIL">
+            <objects>
+                <viewController id="RNo-0T-t0H" customClass="SplashScreen" customModule="Generocity" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jUl-m5-6lk"/>
+                        <viewControllerLayoutGuide type="bottom" id="lq1-S0-gBy"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="YHf-6o-Ygp">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="ejA-QR-k8T">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="lq1-S0-gBy" firstAttribute="top" secondItem="ejA-QR-k8T" secondAttribute="bottom" id="5wA-gb-sEa"/>
+                            <constraint firstItem="ejA-QR-k8T" firstAttribute="top" secondItem="jUl-m5-6lk" secondAttribute="bottom" constant="-20" id="cc9-0z-vYG"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ejA-QR-k8T" secondAttribute="trailing" constant="-16" id="poe-wf-WrC"/>
+                            <constraint firstItem="ejA-QR-k8T" firstAttribute="leading" secondItem="YHf-6o-Ygp" secondAttribute="leadingMargin" constant="-16" id="z6X-6Q-cjf"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="videoHolder" destination="ejA-QR-k8T" id="0Nk-PU-TwO"/>
+                        <segue destination="Ueg-EU-Jgq" kind="show" identifier="titleToDashboard" id="52F-bg-RXW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pqS-1i-qt2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="975.20000000000005" y="111.99400299850076"/>
+        </scene>
+        <!--Dashboard-->
+        <scene sceneID="aQ6-ec-mcx">
+            <objects>
+                <viewController id="Ueg-EU-Jgq" customClass="Dashboard" customModule="Generocity" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="qRV-Xv-2xx"/>
+                        <viewControllerLayoutGuide type="bottom" id="gai-T2-g6E"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="dbt-LX-R2Y">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JwH-VH-iHs">
+                                <rect key="frame" x="172" y="92" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Map"/>
+                                <connections>
+                                    <action selector="showUserMap" destination="Ueg-EU-Jgq" eventType="touchUpInside" id="8QL-lT-PiA"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pol-ca-cgv">
+                                <rect key="frame" x="165" y="168" width="44" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Profile"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ReV-aL-Ahq">
+                                <rect key="frame" x="172" y="251" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Info"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="awa-wA-PbB">
+                                <rect key="frame" x="160" y="347" width="57" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Settings"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="InfoButton" destination="ReV-aL-Ahq" id="ItU-P4-EUk"/>
+                        <outlet property="ProfileButton" destination="Pol-ca-cgv" id="p6I-Qp-g9c"/>
+                        <outlet property="settingsButton" destination="awa-wA-PbB" id="xZb-bD-vFi"/>
+                        <outlet property="showMapButton" destination="JwH-VH-iHs" id="WvU-aw-ey6"/>
+                        <segue destination="ZuR-Ee-Wqb" kind="show" identifier="dashToMap" id="5pP-YZ-eOc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fTS-DL-aL2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1795" y="110"/>
+        </scene>
+        <!--User Map-->
+        <scene sceneID="rPj-0d-k7J">
+            <objects>
+                <viewController id="ZuR-Ee-Wqb" customClass="UserMap" customModule="Generocity" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="8n8-OQ-Unw"/>
+                        <viewControllerLayoutGuide type="bottom" id="TG7-7z-p44"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="0mf-wu-p5b" customClass="GMSMapView">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="mapView" destination="0mf-wu-p5b" id="Yll-R2-JKb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qrz-gZ-wkK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2832.8000000000002" y="111.99400299850076"/>
+        </scene>
+    </scenes>
+</document>

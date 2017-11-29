@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AD_UNIT_ID_FOR_BANNER_TEST</key>
+	<string>ca-app-pub-3940256099942544/2934735716</string>
+	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
+	<string>ca-app-pub-3940256099942544/4411468910</string>
+	<key>CLIENT_ID</key>
+	<string>734454678647-bcpduks9oigrmg6vbs4jf4jsq24evqit.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.734454678647-bcpduks9oigrmg6vbs4jf4jsq24evqit</string>
+	<key>API_KEY</key>
+	<string>AIzaSyBjWCpHWHUAbkLy39JsbGtxY-I0J16uWQY</string>
+	<key>GCM_SENDER_ID</key>
+	<string>734454678647</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.dantelaceythompson.Generocity</string>
+	<key>PROJECT_ID</key>
+	<string>generocity-671cf</string>
+	<key>STORAGE_BUCKET</key>
+	<string>generocity-671cf.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false/>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false/>
+	<key>IS_APPINVITE_ENABLED</key>
+	<false/>
+	<key>IS_GCM_ENABLED</key>
+	<false/>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true/>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:734454678647:ios:4d71578833c417a2</string>
+	<key>DATABASE_URL</key>
+	<string>https://generocity-671cf.firebaseio.com</string>
+</dict>
+</plist>
