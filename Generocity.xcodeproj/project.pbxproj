@@ -14,6 +14,7 @@
 		FA9261EE1FC643F5000E3F62 /* SplashScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9261ED1FC643F5000E3F62 /* SplashScreen.swift */; };
 		FA9261F21FC65DB3000E3F62 /* Comp1.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = FA9261F11FC65DB3000E3F62 /* Comp1.mp4 */; };
 		FA9261F41FC65E6C000E3F62 /* Dashboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9261F31FC65E6C000E3F62 /* Dashboard.swift */; };
+		FAC802561FED67FB00CCC505 /* GoogleDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC802551FED67FB00CCC505 /* GoogleDataProvider.swift */; };
 		FAD816241FC4D8D900F959DD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD816231FC4D8D900F959DD /* AppDelegate.swift */; };
 		FAD816261FC4D8D900F959DD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD816251FC4D8D900F959DD /* ViewController.swift */; };
 		FAD816291FC4D8D900F959DD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAD816271FC4D8D900F959DD /* Main.storyboard */; };
@@ -21,6 +22,8 @@
 		FAD8162E1FC4D8D900F959DD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAD8162C1FC4D8D900F959DD /* LaunchScreen.storyboard */; };
 		FAD816391FC4D8D900F959DD /* GenerocityTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD816381FC4D8D900F959DD /* GenerocityTests.swift */; };
 		FAD816441FC4D8D900F959DD /* GenerocityUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD816431FC4D8D900F959DD /* GenerocityUITests.swift */; };
+		FADC7AD91FECA34A000C22B1 /* GooglePlace.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADC7AD81FECA34A000C22B1 /* GooglePlace.swift */; };
+		FADC7ADB1FECA9BA000C22B1 /* PlaceMarker.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADC7ADA1FECA9BA000C22B1 /* PlaceMarker.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +53,7 @@
 		FA9261ED1FC643F5000E3F62 /* SplashScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplashScreen.swift; sourceTree = "<group>"; };
 		FA9261F11FC65DB3000E3F62 /* Comp1.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Comp1.mp4; sourceTree = "<group>"; };
 		FA9261F31FC65E6C000E3F62 /* Dashboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Dashboard.swift; path = ../Dashboard.swift; sourceTree = "<group>"; };
+		FAC802551FED67FB00CCC505 /* GoogleDataProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoogleDataProvider.swift; sourceTree = "<group>"; };
 		FAD816201FC4D8D900F959DD /* Generocity.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Generocity.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAD816231FC4D8D900F959DD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FAD816251FC4D8D900F959DD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -63,6 +67,8 @@
 		FAD8163F1FC4D8D900F959DD /* GenerocityUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GenerocityUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAD816431FC4D8D900F959DD /* GenerocityUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenerocityUITests.swift; sourceTree = "<group>"; };
 		FAD816451FC4D8D900F959DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FADC7AD81FECA34A000C22B1 /* GooglePlace.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GooglePlace.swift; sourceTree = "<group>"; };
+		FADC7ADA1FECA9BA000C22B1 /* PlaceMarker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaceMarker.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -145,6 +151,9 @@
 				FAD8162A1FC4D8D900F959DD /* Assets.xcassets */,
 				FAD8162C1FC4D8D900F959DD /* LaunchScreen.storyboard */,
 				FAD8162F1FC4D8D900F959DD /* Info.plist */,
+				FAC802551FED67FB00CCC505 /* GoogleDataProvider.swift */,
+				FADC7AD81FECA34A000C22B1 /* GooglePlace.swift */,
+				FADC7ADA1FECA9BA000C22B1 /* PlaceMarker.swift */,
 			);
 			path = Generocity;
 			sourceTree = "<group>";
@@ -388,8 +397,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				FA9261EE1FC643F5000E3F62 /* SplashScreen.swift in Sources */,
+				FADC7ADB1FECA9BA000C22B1 /* PlaceMarker.swift in Sources */,
 				FAD816261FC4D8D900F959DD /* ViewController.swift in Sources */,
+				FADC7AD91FECA34A000C22B1 /* GooglePlace.swift in Sources */,
 				FA9261F41FC65E6C000E3F62 /* Dashboard.swift in Sources */,
+				FAC802561FED67FB00CCC505 /* GoogleDataProvider.swift in Sources */,
 				FAD816241FC4D8D900F959DD /* AppDelegate.swift in Sources */,
 				FA4902BF1FC745D900ED15C9 /* UserMap.swift in Sources */,
 			);

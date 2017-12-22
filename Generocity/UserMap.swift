@@ -17,7 +17,7 @@ class UserMap: UIViewController, CLLocationManagerDelegate {
 //    @IBOutlet weak var viewMap: GMSMapView!
     @IBOutlet var mapView: GMSMapView!
     let locationManager = CLLocationManager()
-    
+    let dataProvider = GoogleDataProvider()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,6 +32,7 @@ class UserMap: UIViewController, CLLocationManagerDelegate {
 //        marker.map = mapView
         print("map view loaded")
         getLocation()
+        dataProvider.checkPreferences()
     }
     
     
@@ -67,6 +68,7 @@ class UserMap: UIViewController, CLLocationManagerDelegate {
 //            print("URL:\(String(describing: pass_me))")
 //            self.bgWebView.loadRequest(URLRequest(url: URL(string: pass_me!)!))
 //        }
+        fetchNearbyPlaces(coordinate: currentLocation.coordinate)
     }
     
     
@@ -79,4 +81,15 @@ class UserMap: UIViewController, CLLocationManagerDelegate {
 //    func locationManager(_ manager: CLLocationManager, didChangeAuthorization status: CLAuthorizationStatus) {
 //        <#code#>
 //    }
+    
+    func fetchNearbyPlaces(coordinate: CLLocationCoordinate2D){
+        mapView.clear()
+        dataProvider.fetchPlacesNearCoordinate(coordinate) { places in
+            for place: GooglePlace in places {
+                let marker = PlaceMarker(place: place)
+                marker.map = self.mapView
+            }
+        }
+    }
+    
 }

@@ -32,9 +32,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate{
         if (defaults.string(forKey: "search_preference") == nil && defaults.integer(forKey: "distance_slider") == 0) {
             setDefaultsFromSettingsBundle()
         }
+        let writeStatus = writeToKC()
         retrieveStatus = retrieveFromKC()
         var retrieveStatusStrings = retrieveStatus.map({$0.stringVal})
-//        print(writeStatus)
+        print(writeStatus)
         print(retrieveStatus)
         print(retrieveStatusStrings)
         GMSServices.provideAPIKey(retrieveStatusStrings[0])
@@ -106,15 +107,28 @@ class AppDelegate: UIResponder, UIApplicationDelegate{
     func retrieveFromKC() -> [(String, String, Bool)] {
         var retrieveStatusArray = [(String, String, Bool)]()
         let retrievedString: String? = KeychainWrapper.standard.string(forKey: "GMAK")
-        let retrievedString2: String? = KeychainWrapper.standard.string(forKey: "GPAK")
-//        let retrievedString3: String? = KeychainWrapper.standard.string(forKey: "GDAK")
+        let retrievedString2: String? = KeychainWrapper.standard.string(forKey: "GMPK")
+//        let retrievedString3: String? = KeychainWrapper.standard.string(forKey: "GMDK")
 //        retrieveStatusArray.append(retrievedString, "GMAK", true)
 //        retrieveStatusArray.append(retrievedString2, "GPAK", true)
 //        retrieveStatusArray.append(retrievedString, "GDAK", true)
         retrieveStatusArray.append((retrievedString!, "GMAK", true))
-        retrieveStatusArray.append((retrievedString2!, "GPAK", true))
-//        retrieveStatusArray.append((retrievedString3!, "GDAK", true))
+        retrieveStatusArray.append((retrievedString2!, "GMPK", true))
+//        retrieveStatusArray.append((retrievedString3!, "GMDK", true))
         return retrieveStatusArray
+    }
+    
+    func writeToKC()->[Bool]{
+        var writeStatusBools = [Bool]()
+        let savedSuccessful: Bool = KeychainWrapper.standard.set("AIzaSyB5N4Umb9Qicr4pm_QkdjEkEpWoKHAWw_k", forKey: "GMAK")
+        let savedSuccessful2: Bool = KeychainWrapper.standard.set("AIzaSyBMHf2DkUlLoUvZ-HAMhfWx8S7Xa5yPdOI", forKey: "GMPK")
+        let savedSuccessful3: Bool = KeychainWrapper.standard.set("AIzaSyAD5WQA6jXEpUeKmBctN0hY_37MFxj25iQ", forKey: "GMDK")
+        let savedSuccessful4: Bool = KeychainWrapper.standard.set("AIzaSyCoUYIVdaUOcoXItHzVf-51rCdktUM2YmM", forKey: "GMPWK")
+        writeStatusBools.append(savedSuccessful)
+        writeStatusBools.append(savedSuccessful2)
+        writeStatusBools.append(savedSuccessful3)
+        writeStatusBools.append(savedSuccessful4)
+        return writeStatusBools
     }
 
 }
