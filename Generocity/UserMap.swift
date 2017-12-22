@@ -32,7 +32,7 @@ class UserMap: UIViewController, CLLocationManagerDelegate {
 //        marker.map = mapView
         print("map view loaded")
         getLocation()
-        dataProvider.checkPreferences()
+//        dataProvider.checkPreferences()
     }
     
     
@@ -87,6 +87,7 @@ class UserMap: UIViewController, CLLocationManagerDelegate {
         dataProvider.fetchPlacesNearCoordinate(coordinate) { places in
             for place: GooglePlace in places {
                 let marker = PlaceMarker(place: place)
+                marker.title = place.name
                 marker.map = self.mapView
             }
         }
