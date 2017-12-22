@@ -12,7 +12,7 @@ import GoogleMaps
 import GooglePlaces
 import CoreLocation
 
-class UserMap: UIViewController, CLLocationManagerDelegate {
+class UserMap: UIViewController, CLLocationManagerDelegate, GMSMapViewDelegate {
     
 //    @IBOutlet weak var viewMap: GMSMapView!
     @IBOutlet var mapView: GMSMapView!
@@ -30,6 +30,7 @@ class UserMap: UIViewController, CLLocationManagerDelegate {
 //        marker.title = "Sydney"
 //        marker.snippet = "Australia"
 //        marker.map = mapView
+        mapView.delegate = self
         print("map view loaded")
         getLocation()
 //        dataProvider.checkPreferences()
@@ -88,9 +89,15 @@ class UserMap: UIViewController, CLLocationManagerDelegate {
             for place: GooglePlace in places {
                 let marker = PlaceMarker(place: place)
                 marker.title = place.name
+                marker.userData = place
                 marker.map = self.mapView
             }
         }
+    }
+    
+    func mapView(_ mapView: GMSMapView, didTapInfoWindowOf marker: GMSMarker) {
+        print("info Window tapped")
+        print(marker.title!)
     }
     
 }
