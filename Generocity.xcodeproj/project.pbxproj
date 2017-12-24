@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		3584CA836BFDEBB64E6476F0 /* Pods_Generocity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B24632AA36B8DF067E26D3E9 /* Pods_Generocity.framework */; };
+		FA3772681FF03D5E0008D9E7 /* infoWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA3772671FF03D5E0008D9E7 /* infoWindow.xib */; };
+		FA37726A1FF046700008D9E7 /* customInfoWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3772691FF046700008D9E7 /* customInfoWindow.swift */; };
 		FA4327CA1FC4DF43007C9049 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FA4327C91FC4DF43007C9049 /* GoogleService-Info.plist */; };
 		FA4902BF1FC745D900ED15C9 /* UserMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4902BE1FC745D900ED15C9 /* UserMap.swift */; };
 		FA6C77341FC526E600B318D1 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = FA6C77331FC526E500B318D1 /* Settings.bundle */; };
@@ -47,6 +49,8 @@
 		6EACCF898CC7B081406FD806 /* Pods-Generocity.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Generocity.release.xcconfig"; path = "Pods/Target Support Files/Pods-Generocity/Pods-Generocity.release.xcconfig"; sourceTree = "<group>"; };
 		9064F425192FBD7B9CED2DA3 /* Pods-Generocity.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Generocity.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Generocity/Pods-Generocity.debug.xcconfig"; sourceTree = "<group>"; };
 		B24632AA36B8DF067E26D3E9 /* Pods_Generocity.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Generocity.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA3772671FF03D5E0008D9E7 /* infoWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = infoWindow.xib; sourceTree = "<group>"; };
+		FA3772691FF046700008D9E7 /* customInfoWindow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = customInfoWindow.swift; sourceTree = "<group>"; };
 		FA4327C91FC4DF43007C9049 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		FA4902BE1FC745D900ED15C9 /* UserMap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserMap.swift; sourceTree = "<group>"; };
 		FA6C77331FC526E500B318D1 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
@@ -147,6 +151,8 @@
 				FA6C77331FC526E500B318D1 /* Settings.bundle */,
 				FAD816271FC4D8D900F959DD /* Main.storyboard */,
 				FA4902BE1FC745D900ED15C9 /* UserMap.swift */,
+				FA3772671FF03D5E0008D9E7 /* infoWindow.xib */,
+				FA3772691FF046700008D9E7 /* customInfoWindow.swift */,
 				FA9261ED1FC643F5000E3F62 /* SplashScreen.swift */,
 				FAD8162A1FC4D8D900F959DD /* Assets.xcassets */,
 				FAD8162C1FC4D8D900F959DD /* LaunchScreen.storyboard */,
@@ -297,6 +303,7 @@
 				FAD8162B1FC4D8D900F959DD /* Assets.xcassets in Resources */,
 				FA9261F21FC65DB3000E3F62 /* Comp1.mp4 in Resources */,
 				FAD816291FC4D8D900F959DD /* Main.storyboard in Resources */,
+				FA3772681FF03D5E0008D9E7 /* infoWindow.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -404,6 +411,7 @@
 				FAC802561FED67FB00CCC505 /* GoogleDataProvider.swift in Sources */,
 				FAD816241FC4D8D900F959DD /* AppDelegate.swift in Sources */,
 				FA4902BF1FC745D900ED15C9 /* UserMap.swift in Sources */,
+				FA37726A1FF046700008D9E7 /* customInfoWindow.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

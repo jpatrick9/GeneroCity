@@ -14,6 +14,8 @@ import CoreLocation
 import Firebase
 import FirebaseDatabase
 import SwiftyJSON
+import SwiftKeychainWrapper
+import Alamofire
 
 class UserMap: UIViewController, CLLocationManagerDelegate, GMSMapViewDelegate {
     
@@ -23,6 +25,10 @@ class UserMap: UIViewController, CLLocationManagerDelegate, GMSMapViewDelegate {
     let dataProvider = GoogleDataProvider()
     let placeRef = Database.database().reference(withPath: "place-list")
     let ref = Database.database().reference()
+    var destAddress: String!
+    var infoWindow = CustomInfoWindow()
+    var activePoint: GooglePlace?
+    var tempPoint: CLLocation!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -36,6 +42,7 @@ class UserMap: UIViewController, CLLocationManagerDelegate, GMSMapViewDelegate {
 //        marker.snippet = "Australia"
 //        marker.map = mapView
         mapView.delegate = self
+        mapView.isMyLocationEnabled = true
         print("map view loaded")
         getLocation()
 //        dataProvider.checkPreferences()
@@ -114,11 +121,81 @@ class UserMap: UIViewController, CLLocationManagerDelegate, GMSMapViewDelegate {
         }
     }
     
-    func mapView(_ mapView: GMSMapView, didTapInfoWindowOf marker: GMSMarker) {
-        print("info Window tapped")
-        print(marker.title!)
+    func mapView(_ mapView: GMSMapView, didTap marker: GMSMarker) -> Bool {
+        if let gPlace = marker.userData as? GooglePlace{
+            if activePoint != nil{
+                infoWindow.removeFromSuperview()
+                activePoint = nil
+            }
+            infoWindow = Bundle.main.loadNibNamed("infoWindow", owner: self, options: nil)?.first as! CustomInfoWindow
+            infoWindow.nameLabel.text = (marker.userData as! GooglePlace).name
+            infoWindow.addressLabel.text = (marker.userData as! GooglePlace).address
+            self.destAddress = (marker.userData as! GooglePlace).address
+            infoWindow.directionsButton.addTarget(self,  action: #selector(getDirections(_:)), for: .touchUpInside)
+            infoWindow.center = mapView.projection.point(for: gPlace.coordinate)
+            activePoint = gPlace
+            self.view.addSubview(infoWindow)
+        }
+        return false
+    }
+    
+    func mapView(_ mapView: GMSMapView, didChange position: GMSCameraPosition) {
+        
+        if let tempPoint = activePoint {
+            infoWindow.center = mapView.projection.point(for: (activePoint?.coordinate)!)
+        }
+        
+    }
+    
+//    func mapView(_ mapView: GMSMapView, didTapInfoWindowOf marker: GMSMarker) {
+//        print("info Window tapped")
+//        print(marker.title!)
 //        let id = (marker.userData as! GooglePlace).placeID
 //        print(id)
+//    }
+    
+//    func mapView(_ mapView: GMSMapView, markerInfoWindow marker: GMSMarker) -> UIView? {
+//        var infoWindow = Bundle.main.loadNibNamed("infoWindow", owner: self, options: nil)?.first as! CustomInfoWindow
+//        infoWindow.nameLabel.text = (marker.userData as! GooglePlace).name
+//        infoWindow.addressLabel.text = (marker.userData as! GooglePlace).address
+//        self.destAddress = (marker.userData as! GooglePlace).address
+//        infoWindow.directionsButton.addTarget(self,  action: #selector(getDirections(_:)), for: .touchUpInside)
+//        return infoWindow
+//    }
+    
+    func getDirections(_ sender: Any){
+        print("In get directions function")
+        let origin = "\(mapView.myLocation?.coordinate.latitude ?? 0.0),\(mapView.myLocation?.coordinate.longitude ?? 0.0)"
+        print(origin)
+        let destination = self.destAddress!.components(separatedBy: .whitespaces).joined()
+        print(destination)
+//        print(destination)
+        let gmdk = KeychainWrapper.standard.string(forKey: "GMDK")
+        let url = "https://maps.googleapis.com/maps/api/directions/json?origin=\(origin)&destination=\(destination )&mode=driving&key=\(gmdk ?? "hiccup in getting key")"
+//        print(url)
+        Alamofire.request(url).responseJSON { response in
+            
+            print(response.request as Any)  // original URL request
+            print(response.response as Any) // HTTP URL response
+            print(response.data as Any)     // server data
+            print(response.result as Any)   // result of response serialization
+            
+            let json = JSON(data: response.data!)
+            let routes = json["routes"].arrayValue
+            
+            // print route using Polyline
+            for route in routes
+            {
+                let routeOverviewPolyline = route["overview_polyline"].dictionary
+                let points = routeOverviewPolyline?["points"]?.stringValue
+                let path = GMSPath.init(fromEncodedPath: points!)
+                let polyline = GMSPolyline.init(path: path)
+                polyline.strokeWidth = 4
+                polyline.strokeColor = UIColor.red
+                polyline.map = self.mapView
+            }
+        }
+        infoWindow.removeFromSuperview()
     }
     
 }
