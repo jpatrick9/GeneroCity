@@ -14,6 +14,7 @@ target 'Generocity' do
   pod 'Alamofire', '~> 4.5'
   pod 'SwiftyJSON'
   pod "Player", "~> 0.7.0"
+  pod 'Firebase/Core'
   pod 'Firebase/Database'
   pod 'Firebase/Auth'
 

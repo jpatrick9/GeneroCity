@@ -16,6 +16,7 @@ class GooglePlace  {
     let coordinate: CLLocationCoordinate2D
     var iconURL: String
     var placeID: String
+    var placeNeeds: String
     
     init(dictionary: [String: AnyObject]) {
         let json = JSON(dictionary)
@@ -26,6 +27,7 @@ class GooglePlace  {
         coordinate = CLLocationCoordinate2DMake(lat, lng)
         iconURL = json["icon"].stringValue
         placeID = json["place_id"].stringValue
+        placeNeeds = "Things the place Needs: "
     }
     
 }

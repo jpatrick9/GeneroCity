@@ -11,6 +11,9 @@ import UIKit
 import GoogleMaps
 import GooglePlaces
 import CoreLocation
+import Firebase
+import FirebaseDatabase
+import SwiftyJSON
 
 class UserMap: UIViewController, CLLocationManagerDelegate, GMSMapViewDelegate {
     
@@ -18,6 +21,8 @@ class UserMap: UIViewController, CLLocationManagerDelegate, GMSMapViewDelegate {
     @IBOutlet var mapView: GMSMapView!
     let locationManager = CLLocationManager()
     let dataProvider = GoogleDataProvider()
+    let placeRef = Database.database().reference(withPath: "place-list")
+    let ref = Database.database().reference()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -91,6 +96,20 @@ class UserMap: UIViewController, CLLocationManagerDelegate, GMSMapViewDelegate {
                 marker.title = place.name
                 marker.userData = place
                 marker.map = self.mapView
+                let placeJson: Dictionary = [
+                    "name": place.name,
+                    "address": place.address,
+                    "place_needs": place.placeNeeds
+                ]
+//                print(placeJson)
+                self.ref.child("place-list").observeSingleEvent(of: .value, with: {(snapshot) in
+                    if snapshot.hasChild(place.placeID){
+                        print("Place exists with ID: \(place.placeID)")
+                    }else{
+                        print("place doesn't exist with ID: \(place.placeID)")
+                        self.ref.child("place-list").child(place.placeID).setValue(placeJson)
+                    }
+                })
             }
         }
     }
@@ -98,6 +117,8 @@ class UserMap: UIViewController, CLLocationManagerDelegate, GMSMapViewDelegate {
     func mapView(_ mapView: GMSMapView, didTapInfoWindowOf marker: GMSMarker) {
         print("info Window tapped")
         print(marker.title!)
+//        let id = (marker.userData as! GooglePlace).placeID
+//        print(id)
     }
     
 }
