@@ -17,6 +17,6 @@ target 'Generocity' do
   pod 'Firebase/Core'
   pod 'Firebase/Database'
   pod 'Firebase/Auth'
-
+  pod 'Eureka', '~>3.1.0'
 
 end

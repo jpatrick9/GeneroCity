@@ -27,7 +27,7 @@ class UserMap: UIViewController, CLLocationManagerDelegate, GMSMapViewDelegate {
     let ref = Database.database().reference()
     var destAddress: String!
     var infoWindow = CustomInfoWindow()
-    var activePoint: GooglePlace?
+    var activePoint: GooglePlace!
     var tempPoint: CLLocation!
     
     override func viewDidLoad() {
@@ -106,7 +106,6 @@ class UserMap: UIViewController, CLLocationManagerDelegate, GMSMapViewDelegate {
                 let placeJson: Dictionary = [
                     "name": place.name,
                     "address": place.address,
-                    "place_needs": place.placeNeeds
                 ]
 //                print(placeJson)
                 self.ref.child("place-list").observeSingleEvent(of: .value, with: {(snapshot) in
@@ -132,6 +131,7 @@ class UserMap: UIViewController, CLLocationManagerDelegate, GMSMapViewDelegate {
             infoWindow.addressLabel.text = (marker.userData as! GooglePlace).address
             self.destAddress = (marker.userData as! GooglePlace).address
             infoWindow.directionsButton.addTarget(self,  action: #selector(getDirections(_:)), for: .touchUpInside)
+            infoWindow.addButton.addTarget(self, action: #selector(goToAdd(_:)), for: .touchUpInside)
             infoWindow.center = mapView.projection.point(for: gPlace.coordinate)
             activePoint = gPlace
             self.view.addSubview(infoWindow)
@@ -141,7 +141,7 @@ class UserMap: UIViewController, CLLocationManagerDelegate, GMSMapViewDelegate {
     
     func mapView(_ mapView: GMSMapView, didChange position: GMSCameraPosition) {
         
-        if let tempPoint = activePoint {
+        if activePoint != nil {
             infoWindow.center = mapView.projection.point(for: (activePoint?.coordinate)!)
         }
         
@@ -196,6 +196,21 @@ class UserMap: UIViewController, CLLocationManagerDelegate, GMSMapViewDelegate {
             }
         }
         infoWindow.removeFromSuperview()
+    }
+    
+    func goToAdd(_ sender: Any){
+        print("add button touched")
+        performSegue(withIdentifier: "addNeedsSegue", sender: activePoint)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "addNeedsSegue"{
+            if let AddNeedsVC = segue.destination as? AddNeedsViewController{
+                if let addNeedPlace = sender as? GooglePlace{
+                    AddNeedsVC.placeAdd = addNeedPlace
+                }
+            }
+        }
     }
     
 }

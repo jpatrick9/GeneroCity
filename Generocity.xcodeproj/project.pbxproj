@@ -10,6 +10,7 @@
 		3584CA836BFDEBB64E6476F0 /* Pods_Generocity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B24632AA36B8DF067E26D3E9 /* Pods_Generocity.framework */; };
 		FA3772681FF03D5E0008D9E7 /* infoWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA3772671FF03D5E0008D9E7 /* infoWindow.xib */; };
 		FA37726A1FF046700008D9E7 /* customInfoWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3772691FF046700008D9E7 /* customInfoWindow.swift */; };
+		FA3887F01FF2AB3E003AC710 /* AddNeedsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3887EF1FF2AB3E003AC710 /* AddNeedsViewController.swift */; };
 		FA4327CA1FC4DF43007C9049 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FA4327C91FC4DF43007C9049 /* GoogleService-Info.plist */; };
 		FA4902BF1FC745D900ED15C9 /* UserMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4902BE1FC745D900ED15C9 /* UserMap.swift */; };
 		FA6C77341FC526E600B318D1 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = FA6C77331FC526E500B318D1 /* Settings.bundle */; };
@@ -51,6 +52,7 @@
 		B24632AA36B8DF067E26D3E9 /* Pods_Generocity.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Generocity.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA3772671FF03D5E0008D9E7 /* infoWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = infoWindow.xib; sourceTree = "<group>"; };
 		FA3772691FF046700008D9E7 /* customInfoWindow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = customInfoWindow.swift; sourceTree = "<group>"; };
+		FA3887EF1FF2AB3E003AC710 /* AddNeedsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddNeedsViewController.swift; sourceTree = "<group>"; };
 		FA4327C91FC4DF43007C9049 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		FA4902BE1FC745D900ED15C9 /* UserMap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserMap.swift; sourceTree = "<group>"; };
 		FA6C77331FC526E500B318D1 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
@@ -151,6 +153,7 @@
 				FA6C77331FC526E500B318D1 /* Settings.bundle */,
 				FAD816271FC4D8D900F959DD /* Main.storyboard */,
 				FA4902BE1FC745D900ED15C9 /* UserMap.swift */,
+				FA3887EF1FF2AB3E003AC710 /* AddNeedsViewController.swift */,
 				FA3772671FF03D5E0008D9E7 /* infoWindow.xib */,
 				FA3772691FF046700008D9E7 /* customInfoWindow.swift */,
 				FA9261ED1FC643F5000E3F62 /* SplashScreen.swift */,
@@ -350,6 +353,7 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Generocity/Pods-Generocity-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Eureka/Eureka.framework",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
 				"${BUILT_PRODUCTS_DIR}/Player/Player.framework",
@@ -361,6 +365,7 @@
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Eureka.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Player.framework",
@@ -405,6 +410,7 @@
 			files = (
 				FA9261EE1FC643F5000E3F62 /* SplashScreen.swift in Sources */,
 				FADC7ADB1FECA9BA000C22B1 /* PlaceMarker.swift in Sources */,
+				FA3887F01FF2AB3E003AC710 /* AddNeedsViewController.swift in Sources */,
 				FAD816261FC4D8D900F959DD /* ViewController.swift in Sources */,
 				FADC7AD91FECA34A000C22B1 /* GooglePlace.swift in Sources */,
 				FA9261F41FC65E6C000E3F62 /* Dashboard.swift in Sources */,
