@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		3584CA836BFDEBB64E6476F0 /* Pods_Generocity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B24632AA36B8DF067E26D3E9 /* Pods_Generocity.framework */; };
+		3FC9D0C31FF45B4100532735 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC9D0C11FF45B4000532735 /* MenuViewController.swift */; };
+		3FC9D0C41FF45B4100532735 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC9D0C21FF45B4100532735 /* BaseViewController.swift */; };
 		FA3772681FF03D5E0008D9E7 /* infoWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA3772671FF03D5E0008D9E7 /* infoWindow.xib */; };
 		FA37726A1FF046700008D9E7 /* customInfoWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3772691FF046700008D9E7 /* customInfoWindow.swift */; };
 		FA3887F01FF2AB3E003AC710 /* AddNeedsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3887EF1FF2AB3E003AC710 /* AddNeedsViewController.swift */; };
@@ -49,6 +51,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3FC9D0C11FF45B4000532735 /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		3FC9D0C21FF45B4100532735 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		6EACCF898CC7B081406FD806 /* Pods-Generocity.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Generocity.release.xcconfig"; path = "Pods/Target Support Files/Pods-Generocity/Pods-Generocity.release.xcconfig"; sourceTree = "<group>"; };
 		9064F425192FBD7B9CED2DA3 /* Pods-Generocity.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Generocity.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Generocity/Pods-Generocity.debug.xcconfig"; sourceTree = "<group>"; };
 		B24632AA36B8DF067E26D3E9 /* Pods_Generocity.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Generocity.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -156,6 +160,8 @@
 				FA4327C91FC4DF43007C9049 /* GoogleService-Info.plist */,
 				FA6C77331FC526E500B318D1 /* Settings.bundle */,
 				FAD816271FC4D8D900F959DD /* Main.storyboard */,
+				3FC9D0C21FF45B4100532735 /* BaseViewController.swift */,
+				3FC9D0C11FF45B4000532735 /* MenuViewController.swift */,
 				FA3887F31FF2CE88003AC710 /* NeedCell.swift */,
 				FA3887F51FF2D3FD003AC710 /* NeedsViewController.swift */,
 				FA4902BE1FC745D900ED15C9 /* UserMap.swift */,
@@ -419,8 +425,10 @@
 				FA3887F61FF2D3FD003AC710 /* NeedsViewController.swift in Sources */,
 				FA3887F41FF2CE88003AC710 /* NeedCell.swift in Sources */,
 				FA3887F01FF2AB3E003AC710 /* AddNeedsViewController.swift in Sources */,
+				3FC9D0C41FF45B4100532735 /* BaseViewController.swift in Sources */,
 				FAD816261FC4D8D900F959DD /* ViewController.swift in Sources */,
 				FADC7AD91FECA34A000C22B1 /* GooglePlace.swift in Sources */,
+				3FC9D0C31FF45B4100532735 /* MenuViewController.swift in Sources */,
 				FA9261F41FC65E6C000E3F62 /* Dashboard.swift in Sources */,
 				FAC802561FED67FB00CCC505 /* GoogleDataProvider.swift in Sources */,
 				FAD816241FC4D8D900F959DD /* AppDelegate.swift in Sources */,

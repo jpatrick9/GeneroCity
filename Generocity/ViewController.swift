@@ -47,7 +47,7 @@ class ViewController: UIViewController, GIDSignInUIDelegate, GIDSignInDelegate, 
             print(email!)
             // ...
 //            print(JSON(user.profile))
-            performSegue(withIdentifier: "showSplash", sender: self)
+            performSegue(withIdentifier: "signInToDash", sender: self)
         } else {
             print("\(error.localizedDescription)")
         }

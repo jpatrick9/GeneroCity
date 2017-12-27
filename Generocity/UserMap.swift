@@ -17,7 +17,7 @@ import SwiftyJSON
 import SwiftKeychainWrapper
 import Alamofire
 
-class UserMap: UIViewController, CLLocationManagerDelegate, GMSMapViewDelegate {
+class UserMap: BaseViewController, CLLocationManagerDelegate, GMSMapViewDelegate {
     
 //    @IBOutlet weak var viewMap: GMSMapView!
     @IBOutlet var mapView: GMSMapView!
@@ -32,6 +32,7 @@ class UserMap: UIViewController, CLLocationManagerDelegate, GMSMapViewDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.addSlideMenuButton()
 //        locationManager.delegate = self
 //        let camera = GMSCameraPosition.camera(withLatitude: -33.86, longitude: 151.20, zoom: 15.0)
 //        let mapView = GMSMapView.map(withFrame: CGRect.zero, camera: camera)

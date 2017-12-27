@@ -9,8 +9,8 @@
 import Foundation
 import UIKit
 
-class Dashboard: UIViewController {
-    @IBOutlet weak var testLabel: UILabel!
+class Dashboard: BaseViewController {
+    
     @IBOutlet weak var showMapButton: UIButton!
     @IBOutlet weak var ProfileButton: UIButton!
     @IBOutlet weak var InfoButton: UIButton!
@@ -18,6 +18,7 @@ class Dashboard: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.addSlideMenuButton()
         print("In dashboard view")
     }
     

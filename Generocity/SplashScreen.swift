@@ -69,6 +69,6 @@ class SplashScreen: UIViewController {
     }
     
     func finishedPlaying(note: NSNotification){
-        performSegue(withIdentifier: "titleToDashboard", sender: self)
+        performSegue(withIdentifier: "splashToSignIn", sender: self)
     }
 }
