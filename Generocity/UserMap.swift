@@ -132,6 +132,7 @@ class UserMap: UIViewController, CLLocationManagerDelegate, GMSMapViewDelegate {
             self.destAddress = (marker.userData as! GooglePlace).address
             infoWindow.directionsButton.addTarget(self,  action: #selector(getDirections(_:)), for: .touchUpInside)
             infoWindow.addButton.addTarget(self, action: #selector(goToAdd(_:)), for: .touchUpInside)
+            infoWindow.dropButton.addTarget(self, action: #selector(goToNeeds(_:)), for: .touchUpInside)
             infoWindow.center = mapView.projection.point(for: gPlace.coordinate)
             activePoint = gPlace
             self.view.addSubview(infoWindow)
@@ -203,11 +204,23 @@ class UserMap: UIViewController, CLLocationManagerDelegate, GMSMapViewDelegate {
         performSegue(withIdentifier: "addNeedsSegue", sender: activePoint)
     }
     
+    func goToNeeds(_ sender: Any){
+        print("Needs Button Touched")
+        performSegue(withIdentifier: "needsSegue", sender: activePoint)
+    }
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "addNeedsSegue"{
             if let AddNeedsVC = segue.destination as? AddNeedsViewController{
                 if let addNeedPlace = sender as? GooglePlace{
                     AddNeedsVC.placeAdd = addNeedPlace
+                }
+            }
+        }
+        else if segue.identifier == "needsSegue"{
+            if let NeedsVC = segue.destination as? NeedsViewController{
+                if let needPlace = sender as? GooglePlace{
+                    NeedsVC.needsPlace = needPlace
                 }
             }
         }

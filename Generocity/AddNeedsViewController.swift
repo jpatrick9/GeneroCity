@@ -57,7 +57,7 @@ class AddNeedsViewController: FormViewController {
     
     func addNeed(){
         let row: TextRow? = form.rowBy(tag: "needRow")
-        if let value = row?.value {
+        if let value = row?.value?.lowercased() {
             print(value)
 //            self.ref.child("place-list").child(self.placeAdd.placeID).child("needs").updateChildValues(["needs": value])
             self.ref.child("place-list").child(self.placeAdd.placeID).child("needs").childByAutoId().setValue(value)

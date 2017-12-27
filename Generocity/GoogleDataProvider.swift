@@ -31,7 +31,7 @@ class GoogleDataProvider {
         //        let retrievedString: String? = KeychainWrapper.standard.string(forKey: "GMAK")
         if let gmpwk: String = KeychainWrapper.standard.string(forKey: "GMPWK"){
             print("got gmpwk")
-            let urlString = "https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=\(coordinate.latitude),\(coordinate.longitude)&radius=\(String(distancePref))&keyword=\(searchPref)&key=\(gmpwk)"
+            let urlString = "https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=\(coordinate.latitude),\(coordinate.longitude)&radius=\(String(distancePref))&keyword=\(searchPref.components(separatedBy: .whitespaces).joined())&key=\(gmpwk)"
             if let task = placesTask, task.taskIdentifier > 0 && task.state == .running {
                 task.cancel()
             }

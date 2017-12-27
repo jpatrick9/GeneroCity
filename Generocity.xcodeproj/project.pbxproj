@@ -11,6 +11,8 @@
 		FA3772681FF03D5E0008D9E7 /* infoWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA3772671FF03D5E0008D9E7 /* infoWindow.xib */; };
 		FA37726A1FF046700008D9E7 /* customInfoWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3772691FF046700008D9E7 /* customInfoWindow.swift */; };
 		FA3887F01FF2AB3E003AC710 /* AddNeedsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3887EF1FF2AB3E003AC710 /* AddNeedsViewController.swift */; };
+		FA3887F41FF2CE88003AC710 /* NeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3887F31FF2CE88003AC710 /* NeedCell.swift */; };
+		FA3887F61FF2D3FD003AC710 /* NeedsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3887F51FF2D3FD003AC710 /* NeedsViewController.swift */; };
 		FA4327CA1FC4DF43007C9049 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FA4327C91FC4DF43007C9049 /* GoogleService-Info.plist */; };
 		FA4902BF1FC745D900ED15C9 /* UserMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4902BE1FC745D900ED15C9 /* UserMap.swift */; };
 		FA6C77341FC526E600B318D1 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = FA6C77331FC526E500B318D1 /* Settings.bundle */; };
@@ -53,6 +55,8 @@
 		FA3772671FF03D5E0008D9E7 /* infoWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = infoWindow.xib; sourceTree = "<group>"; };
 		FA3772691FF046700008D9E7 /* customInfoWindow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = customInfoWindow.swift; sourceTree = "<group>"; };
 		FA3887EF1FF2AB3E003AC710 /* AddNeedsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddNeedsViewController.swift; sourceTree = "<group>"; };
+		FA3887F31FF2CE88003AC710 /* NeedCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NeedCell.swift; path = ../NeedCell.swift; sourceTree = "<group>"; };
+		FA3887F51FF2D3FD003AC710 /* NeedsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NeedsViewController.swift; sourceTree = "<group>"; };
 		FA4327C91FC4DF43007C9049 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		FA4902BE1FC745D900ED15C9 /* UserMap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserMap.swift; sourceTree = "<group>"; };
 		FA6C77331FC526E500B318D1 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
@@ -152,6 +156,8 @@
 				FA4327C91FC4DF43007C9049 /* GoogleService-Info.plist */,
 				FA6C77331FC526E500B318D1 /* Settings.bundle */,
 				FAD816271FC4D8D900F959DD /* Main.storyboard */,
+				FA3887F31FF2CE88003AC710 /* NeedCell.swift */,
+				FA3887F51FF2D3FD003AC710 /* NeedsViewController.swift */,
 				FA4902BE1FC745D900ED15C9 /* UserMap.swift */,
 				FA3887EF1FF2AB3E003AC710 /* AddNeedsViewController.swift */,
 				FA3772671FF03D5E0008D9E7 /* infoWindow.xib */,
@@ -410,6 +416,8 @@
 			files = (
 				FA9261EE1FC643F5000E3F62 /* SplashScreen.swift in Sources */,
 				FADC7ADB1FECA9BA000C22B1 /* PlaceMarker.swift in Sources */,
+				FA3887F61FF2D3FD003AC710 /* NeedsViewController.swift in Sources */,
+				FA3887F41FF2CE88003AC710 /* NeedCell.swift in Sources */,
 				FA3887F01FF2AB3E003AC710 /* AddNeedsViewController.swift in Sources */,
 				FAD816261FC4D8D900F959DD /* ViewController.swift in Sources */,
 				FADC7AD91FECA34A000C22B1 /* GooglePlace.swift in Sources */,
