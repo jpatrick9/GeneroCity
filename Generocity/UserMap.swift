@@ -74,6 +74,7 @@ class UserMap: BaseViewController, CLLocationManagerDelegate, GMSMapViewDelegate
         let currentLocation = locations.last!
         print("Current location: \(currentLocation)")
         let camera = GMSCameraPosition.camera(withLatitude: currentLocation.coordinate.latitude, longitude: currentLocation.coordinate.longitude, zoom: 15.0)
+        
         mapView.animate(to: camera)
 //        locationManager.stopUpdatingLocation()
 //        if let uniqID = UUIDValue{
@@ -127,6 +128,7 @@ class UserMap: BaseViewController, CLLocationManagerDelegate, GMSMapViewDelegate
                 infoWindow.removeFromSuperview()
                 activePoint = nil
             }
+            
             infoWindow = Bundle.main.loadNibNamed("infoWindow", owner: self, options: nil)?.first as! CustomInfoWindow
             infoWindow.nameLabel.text = (marker.userData as! GooglePlace).name
             infoWindow.addressLabel.text = (marker.userData as! GooglePlace).address

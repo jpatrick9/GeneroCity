@@ -90,7 +90,7 @@ class NeedsViewController: UIViewController, UITableViewDelegate, UITableViewDat
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         //make an alert to do delete functionality
         let needAtPlace = needsList[indexPath.row]
-        let alertController = UIAlertController(title: "\(needsPlace.name) \(needAtPlace)", message: "Would you like to confirm drop off for this need at \(needsPlace.name)", preferredStyle: .alert)
+        let alertController = UIAlertController(title: "\(needAtPlace)", message: "Would you like to confirm drop off for this need at \(needsPlace.name)", preferredStyle: .alert)
         let confirmAction = UIAlertAction(title: "Confirm", style: .default, handler: {action in
             self.deleteNeedFromPlace(needToDelete: needAtPlace)
         })

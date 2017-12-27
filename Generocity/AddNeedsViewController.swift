@@ -34,12 +34,14 @@ class AddNeedsViewController: FormViewController {
                 row.title = "Name"
                 row.tag = "nameRow"
                 row.value = placeAdd.name
+                row.disabled = true
         }
             <<< TextRow(){
                 row in
                 row.title = "Address"
                 row.tag = "addressRow"
                 row.value = placeAdd.address
+                row.disabled = true
         }
         +++ Section("\(placeAdd.name): Need Information")
             <<< TextRow(){
@@ -62,6 +64,7 @@ class AddNeedsViewController: FormViewController {
 //            self.ref.child("place-list").child(self.placeAdd.placeID).child("needs").updateChildValues(["needs": value])
             self.ref.child("place-list").child(self.placeAdd.placeID).child("needs").childByAutoId().setValue(value)
             row?.value = ""
+            self.navigationController?.popViewController(animated: true)
         } else{
             //make alert
             print("invalid value")
