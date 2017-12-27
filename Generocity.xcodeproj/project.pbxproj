@@ -8,12 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		3584CA836BFDEBB64E6476F0 /* Pods_Generocity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B24632AA36B8DF067E26D3E9 /* Pods_Generocity.framework */; };
+		FA3772681FF03D5E0008D9E7 /* infoWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA3772671FF03D5E0008D9E7 /* infoWindow.xib */; };
+		FA37726A1FF046700008D9E7 /* customInfoWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3772691FF046700008D9E7 /* customInfoWindow.swift */; };
+		FA3887F01FF2AB3E003AC710 /* AddNeedsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3887EF1FF2AB3E003AC710 /* AddNeedsViewController.swift */; };
+		FA3887F41FF2CE88003AC710 /* NeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3887F31FF2CE88003AC710 /* NeedCell.swift */; };
+		FA3887F61FF2D3FD003AC710 /* NeedsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3887F51FF2D3FD003AC710 /* NeedsViewController.swift */; };
 		FA4327CA1FC4DF43007C9049 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FA4327C91FC4DF43007C9049 /* GoogleService-Info.plist */; };
 		FA4902BF1FC745D900ED15C9 /* UserMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4902BE1FC745D900ED15C9 /* UserMap.swift */; };
 		FA6C77341FC526E600B318D1 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = FA6C77331FC526E500B318D1 /* Settings.bundle */; };
 		FA9261EE1FC643F5000E3F62 /* SplashScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9261ED1FC643F5000E3F62 /* SplashScreen.swift */; };
 		FA9261F21FC65DB3000E3F62 /* Comp1.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = FA9261F11FC65DB3000E3F62 /* Comp1.mp4 */; };
 		FA9261F41FC65E6C000E3F62 /* Dashboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9261F31FC65E6C000E3F62 /* Dashboard.swift */; };
+		FAC802561FED67FB00CCC505 /* GoogleDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC802551FED67FB00CCC505 /* GoogleDataProvider.swift */; };
 		FAD816241FC4D8D900F959DD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD816231FC4D8D900F959DD /* AppDelegate.swift */; };
 		FAD816261FC4D8D900F959DD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD816251FC4D8D900F959DD /* ViewController.swift */; };
 		FAD816291FC4D8D900F959DD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAD816271FC4D8D900F959DD /* Main.storyboard */; };
@@ -21,6 +27,8 @@
 		FAD8162E1FC4D8D900F959DD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAD8162C1FC4D8D900F959DD /* LaunchScreen.storyboard */; };
 		FAD816391FC4D8D900F959DD /* GenerocityTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD816381FC4D8D900F959DD /* GenerocityTests.swift */; };
 		FAD816441FC4D8D900F959DD /* GenerocityUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD816431FC4D8D900F959DD /* GenerocityUITests.swift */; };
+		FADC7AD91FECA34A000C22B1 /* GooglePlace.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADC7AD81FECA34A000C22B1 /* GooglePlace.swift */; };
+		FADC7ADB1FECA9BA000C22B1 /* PlaceMarker.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADC7ADA1FECA9BA000C22B1 /* PlaceMarker.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,12 +52,18 @@
 		6EACCF898CC7B081406FD806 /* Pods-Generocity.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Generocity.release.xcconfig"; path = "Pods/Target Support Files/Pods-Generocity/Pods-Generocity.release.xcconfig"; sourceTree = "<group>"; };
 		9064F425192FBD7B9CED2DA3 /* Pods-Generocity.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Generocity.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Generocity/Pods-Generocity.debug.xcconfig"; sourceTree = "<group>"; };
 		B24632AA36B8DF067E26D3E9 /* Pods_Generocity.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Generocity.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA3772671FF03D5E0008D9E7 /* infoWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = infoWindow.xib; sourceTree = "<group>"; };
+		FA3772691FF046700008D9E7 /* customInfoWindow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = customInfoWindow.swift; sourceTree = "<group>"; };
+		FA3887EF1FF2AB3E003AC710 /* AddNeedsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddNeedsViewController.swift; sourceTree = "<group>"; };
+		FA3887F31FF2CE88003AC710 /* NeedCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NeedCell.swift; path = ../NeedCell.swift; sourceTree = "<group>"; };
+		FA3887F51FF2D3FD003AC710 /* NeedsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NeedsViewController.swift; sourceTree = "<group>"; };
 		FA4327C91FC4DF43007C9049 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		FA4902BE1FC745D900ED15C9 /* UserMap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserMap.swift; sourceTree = "<group>"; };
 		FA6C77331FC526E500B318D1 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 		FA9261ED1FC643F5000E3F62 /* SplashScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplashScreen.swift; sourceTree = "<group>"; };
 		FA9261F11FC65DB3000E3F62 /* Comp1.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Comp1.mp4; sourceTree = "<group>"; };
 		FA9261F31FC65E6C000E3F62 /* Dashboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Dashboard.swift; path = ../Dashboard.swift; sourceTree = "<group>"; };
+		FAC802551FED67FB00CCC505 /* GoogleDataProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoogleDataProvider.swift; sourceTree = "<group>"; };
 		FAD816201FC4D8D900F959DD /* Generocity.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Generocity.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAD816231FC4D8D900F959DD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FAD816251FC4D8D900F959DD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -63,6 +77,8 @@
 		FAD8163F1FC4D8D900F959DD /* GenerocityUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GenerocityUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAD816431FC4D8D900F959DD /* GenerocityUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenerocityUITests.swift; sourceTree = "<group>"; };
 		FAD816451FC4D8D900F959DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FADC7AD81FECA34A000C22B1 /* GooglePlace.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GooglePlace.swift; sourceTree = "<group>"; };
+		FADC7ADA1FECA9BA000C22B1 /* PlaceMarker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaceMarker.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,11 +156,19 @@
 				FA4327C91FC4DF43007C9049 /* GoogleService-Info.plist */,
 				FA6C77331FC526E500B318D1 /* Settings.bundle */,
 				FAD816271FC4D8D900F959DD /* Main.storyboard */,
+				FA3887F31FF2CE88003AC710 /* NeedCell.swift */,
+				FA3887F51FF2D3FD003AC710 /* NeedsViewController.swift */,
 				FA4902BE1FC745D900ED15C9 /* UserMap.swift */,
+				FA3887EF1FF2AB3E003AC710 /* AddNeedsViewController.swift */,
+				FA3772671FF03D5E0008D9E7 /* infoWindow.xib */,
+				FA3772691FF046700008D9E7 /* customInfoWindow.swift */,
 				FA9261ED1FC643F5000E3F62 /* SplashScreen.swift */,
 				FAD8162A1FC4D8D900F959DD /* Assets.xcassets */,
 				FAD8162C1FC4D8D900F959DD /* LaunchScreen.storyboard */,
 				FAD8162F1FC4D8D900F959DD /* Info.plist */,
+				FAC802551FED67FB00CCC505 /* GoogleDataProvider.swift */,
+				FADC7AD81FECA34A000C22B1 /* GooglePlace.swift */,
+				FADC7ADA1FECA9BA000C22B1 /* PlaceMarker.swift */,
 			);
 			path = Generocity;
 			sourceTree = "<group>";
@@ -236,12 +260,12 @@
 					New,
 				);
 				LastSwiftUpdateCheck = 0830;
-				LastUpgradeCheck = 0830;
+				LastUpgradeCheck = 0910;
 				ORGANIZATIONNAME = "Dante  Lacey-Thompson";
 				TargetAttributes = {
 					FAD8161F1FC4D8D900F959DD = {
 						CreatedOnToolsVersion = 8.3.3;
-						DevelopmentTeam = 53SJXKK42P;
+						DevelopmentTeam = 2JM2665PKV;
 						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
@@ -288,6 +312,7 @@
 				FAD8162B1FC4D8D900F959DD /* Assets.xcassets in Resources */,
 				FA9261F21FC65DB3000E3F62 /* Comp1.mp4 in Resources */,
 				FAD816291FC4D8D900F959DD /* Main.storyboard in Resources */,
+				FA3772681FF03D5E0008D9E7 /* infoWindow.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -334,6 +359,7 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Generocity/Pods-Generocity-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Eureka/Eureka.framework",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
 				"${BUILT_PRODUCTS_DIR}/Player/Player.framework",
@@ -345,6 +371,7 @@
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Eureka.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Player.framework",
@@ -388,10 +415,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				FA9261EE1FC643F5000E3F62 /* SplashScreen.swift in Sources */,
+				FADC7ADB1FECA9BA000C22B1 /* PlaceMarker.swift in Sources */,
+				FA3887F61FF2D3FD003AC710 /* NeedsViewController.swift in Sources */,
+				FA3887F41FF2CE88003AC710 /* NeedCell.swift in Sources */,
+				FA3887F01FF2AB3E003AC710 /* AddNeedsViewController.swift in Sources */,
 				FAD816261FC4D8D900F959DD /* ViewController.swift in Sources */,
+				FADC7AD91FECA34A000C22B1 /* GooglePlace.swift in Sources */,
 				FA9261F41FC65E6C000E3F62 /* Dashboard.swift in Sources */,
+				FAC802561FED67FB00CCC505 /* GoogleDataProvider.swift in Sources */,
 				FAD816241FC4D8D900F959DD /* AppDelegate.swift in Sources */,
 				FA4902BF1FC745D900ED15C9 /* UserMap.swift in Sources */,
+				FA37726A1FF046700008D9E7 /* customInfoWindow.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -456,7 +490,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -464,7 +500,11 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -507,7 +547,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -515,7 +557,11 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -548,10 +594,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = 53SJXKK42P;
+				DEVELOPMENT_TEAM = 2JM2665PKV;
 				INFOPLIST_FILE = Generocity/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.dantelaceythompson.Generocity;
+				PRODUCT_BUNDLE_IDENTIFIER = "edu.csumb-2017-manny42g.Generocity";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_INSTALL_OBJC_HEADER = NO;
@@ -568,10 +614,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = 53SJXKK42P;
+				DEVELOPMENT_TEAM = 2JM2665PKV;
 				INFOPLIST_FILE = Generocity/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.dantelaceythompson.Generocity;
+				PRODUCT_BUNDLE_IDENTIFIER = "edu.csumb-2017-manny42g.Generocity";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_INSTALL_OBJC_HEADER = NO;

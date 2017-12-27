@@ -46,11 +46,11 @@
 			<key>Key</key>
 			<string>distance_slider</string>
 			<key>DefaultValue</key>
-			<real>1609.34</real>
+			<integer>5</integer>
 			<key>MinimumValue</key>
 			<integer>0</integer>
 			<key>MaximumValue</key>
-			<integer>160934</integer>
+			<integer>100</integer>
 		</dict>
 	</array>
 </dict>
