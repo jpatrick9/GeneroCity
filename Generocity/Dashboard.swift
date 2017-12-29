@@ -12,9 +12,6 @@ import UIKit
 class Dashboard: BaseViewController {
     
     @IBOutlet weak var showMapButton: UIButton!
-    @IBOutlet weak var ProfileButton: UIButton!
-    @IBOutlet weak var InfoButton: UIButton!
-    @IBOutlet weak var settingsButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()

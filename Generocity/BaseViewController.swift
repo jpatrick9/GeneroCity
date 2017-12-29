@@ -36,12 +36,6 @@ class BaseViewController: UIViewController, SlideMenuDelegate {
             self.openViewControllerBasedOnIdentifier("Map")
             
             break
-        case 2:
-            print("\n", terminator: "")
-            
-            self.openViewControllerBasedOnIdentifier("")
-            
-            break
         default:
             print("default\n", terminator: "")
         }

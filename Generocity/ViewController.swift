@@ -13,16 +13,23 @@ import CoreLocation
 import SwiftKeychainWrapper
 
 class ViewController: UIViewController, GIDSignInUIDelegate, GIDSignInDelegate, CLLocationManagerDelegate {
-
-     let signInButton = GIDSignInButton(frame: CGRect(x: 0, y: 0, width: 100, height: 50))
-     var locationManager: CLLocationManager!
+    let deviceHeight = UIScreen.main.bounds.height
+    
+    var locationManager: CLLocationManager!
+    let signInButton = GIDSignInButton(frame: CGRect(x: 0, y: 0, width: 100, height: 50))
+    
+    @IBOutlet weak var imageView: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        imageView.image = #imageLiteral(resourceName: "GenerocityLogin")
+        imageView.contentMode = .scaleAspectFit
+        
         // Do any additional setup after loading the view, typically from a nib.
         GIDSignIn.sharedInstance().uiDelegate = self
         GIDSignIn.sharedInstance().delegate = self
         signInButton.center = view.center
+//        signInButton.
         view.addSubview(signInButton)
         setUpLoc()
     }
@@ -47,7 +54,7 @@ class ViewController: UIViewController, GIDSignInUIDelegate, GIDSignInDelegate, 
             print(email!)
             // ...
 //            print(JSON(user.profile))
-            performSegue(withIdentifier: "signInToDash", sender: self)
+            performSegue(withIdentifier: "showSplash", sender: self)
         } else {
             print("\(error.localizedDescription)")
         }
