@@ -29,7 +29,7 @@ class ViewController: UIViewController, GIDSignInUIDelegate, GIDSignInDelegate, 
         GIDSignIn.sharedInstance().uiDelegate = self
         GIDSignIn.sharedInstance().delegate = self
         signInButton.center = view.center
-//        signInButton.
+        
         view.addSubview(signInButton)
         setUpLoc()
     }

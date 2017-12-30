@@ -94,26 +94,109 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JwH-VH-iHs">
-                                <rect key="frame" x="172" y="92" width="30" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Map"/>
-                                <connections>
-                                    <action selector="showUserMap" destination="Ueg-EU-Jgq" eventType="touchUpInside" id="8QL-lT-PiA"/>
-                                </connections>
-                            </button>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="f15-rM-jy7">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Items you have donated:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2fi-so-gqj">
+                                        <rect key="frame" x="93" y="158" width="188" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="42" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9W1-ea-2qY">
+                                        <rect key="frame" x="108" y="187" width="157" height="47"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="47" id="6dX-Vy-IaL"/>
+                                            <constraint firstAttribute="width" constant="157" id="jdt-cd-sCc"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="43"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="34" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dZI-u2-Vcq">
+                                        <rect key="frame" x="109" y="305" width="157" height="52"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="43"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10,423" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Uq-61-LXH">
+                                        <rect key="frame" x="109" y="52" width="157" height="52"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="157" id="G47-1i-AUT"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="43"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total of items donated so far:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2kZ-In-gzJ">
+                                        <rect key="frame" x="76" y="23" width="223" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="homeless" translatesAutoresizingMaskIntoConstraints="NO" id="R6F-7e-DeA">
+                                        <rect key="frame" x="67" y="374" width="240" height="128"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="128" id="Iln-1h-zkB"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="People Helped:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eVp-Z3-9gj">
+                                        <rect key="frame" x="129" y="259" width="117" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="You are one of many willing to contribute in the bettering of others and for that we thank you." textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rpj-pB-JiN">
+                                        <rect key="frame" x="67" y="498" width="240" height="76"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="76" id="Kas-xQ-9hV"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="R6F-7e-DeA" firstAttribute="leading" secondItem="rpj-pB-JiN" secondAttribute="leading" id="5XP-DB-OwM"/>
+                                    <constraint firstItem="9W1-ea-2qY" firstAttribute="top" secondItem="2fi-so-gqj" secondAttribute="bottom" constant="8" symbolic="YES" id="5xd-NE-BsK"/>
+                                    <constraint firstItem="dZI-u2-Vcq" firstAttribute="centerX" secondItem="R6F-7e-DeA" secondAttribute="centerX" id="6W9-be-0EJ"/>
+                                    <constraint firstItem="2fi-so-gqj" firstAttribute="top" secondItem="1Uq-61-LXH" secondAttribute="bottom" constant="54" id="9s8-Sx-ehP"/>
+                                    <constraint firstItem="1Uq-61-LXH" firstAttribute="leading" secondItem="dZI-u2-Vcq" secondAttribute="leading" id="Cm2-n7-nus"/>
+                                    <constraint firstItem="R6F-7e-DeA" firstAttribute="leading" secondItem="f15-rM-jy7" secondAttribute="leading" constant="67" id="Gr7-Jd-NDg"/>
+                                    <constraint firstItem="1Uq-61-LXH" firstAttribute="trailing" secondItem="dZI-u2-Vcq" secondAttribute="trailing" id="MXQ-7V-2UC"/>
+                                    <constraint firstItem="R6F-7e-DeA" firstAttribute="trailing" secondItem="rpj-pB-JiN" secondAttribute="trailing" id="Mhw-PX-r8o"/>
+                                    <constraint firstItem="R6F-7e-DeA" firstAttribute="top" secondItem="dZI-u2-Vcq" secondAttribute="bottom" constant="17" id="N52-6Q-wTL"/>
+                                    <constraint firstItem="1Uq-61-LXH" firstAttribute="top" secondItem="2kZ-In-gzJ" secondAttribute="bottom" constant="8" symbolic="YES" id="O63-Sx-rkC"/>
+                                    <constraint firstItem="eVp-Z3-9gj" firstAttribute="top" secondItem="9W1-ea-2qY" secondAttribute="bottom" constant="25" id="Rhq-BM-iJf"/>
+                                    <constraint firstItem="2kZ-In-gzJ" firstAttribute="centerX" secondItem="1Uq-61-LXH" secondAttribute="centerX" id="SZ1-CM-Q0e"/>
+                                    <constraint firstAttribute="bottom" secondItem="rpj-pB-JiN" secondAttribute="bottom" constant="29" id="T2G-HH-ixH"/>
+                                    <constraint firstItem="2fi-so-gqj" firstAttribute="centerX" secondItem="9W1-ea-2qY" secondAttribute="centerX" id="TSQ-wP-vJ2"/>
+                                    <constraint firstItem="2fi-so-gqj" firstAttribute="centerX" secondItem="f15-rM-jy7" secondAttribute="centerX" id="VeO-rn-Ngq"/>
+                                    <constraint firstItem="2fi-so-gqj" firstAttribute="centerX" secondItem="eVp-Z3-9gj" secondAttribute="centerX" id="Zab-Rh-EQH"/>
+                                    <constraint firstItem="rpj-pB-JiN" firstAttribute="top" secondItem="f15-rM-jy7" secondAttribute="top" constant="498" id="f7n-a0-Xlo"/>
+                                    <constraint firstItem="2kZ-In-gzJ" firstAttribute="top" secondItem="f15-rM-jy7" secondAttribute="top" constant="23" id="h5U-6g-8jo"/>
+                                    <constraint firstItem="eVp-Z3-9gj" firstAttribute="centerX" secondItem="dZI-u2-Vcq" secondAttribute="centerX" id="lwu-Qh-2aG"/>
+                                    <constraint firstItem="dZI-u2-Vcq" firstAttribute="top" secondItem="eVp-Z3-9gj" secondAttribute="bottom" constant="25" id="rh5-KJ-H6g"/>
+                                    <constraint firstAttribute="trailing" secondItem="R6F-7e-DeA" secondAttribute="trailing" constant="68" id="sNo-zv-6q7"/>
+                                </constraints>
+                            </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="f15-rM-jy7" firstAttribute="bottom" secondItem="gai-T2-g6E" secondAttribute="top" id="J9I-5F-QUZ"/>
+                            <constraint firstItem="f15-rM-jy7" firstAttribute="top" secondItem="qRV-Xv-2xx" secondAttribute="bottom" id="dsw-nV-gFf"/>
+                            <constraint firstAttribute="trailing" secondItem="f15-rM-jy7" secondAttribute="trailing" id="e5F-eJ-bjX"/>
+                            <constraint firstItem="f15-rM-jy7" firstAttribute="leading" secondItem="dbt-LX-R2Y" secondAttribute="leading" id="iv2-cC-DwF"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="N6c-Wf-810"/>
                     <connections>
-                        <outlet property="showMapButton" destination="JwH-VH-iHs" id="WvU-aw-ey6"/>
                         <segue destination="ZuR-Ee-Wqb" kind="show" identifier="dashToMap" id="Uim-bv-ryh"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fTS-DL-aL2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2996" y="108"/>
+            <point key="canvasLocation" x="2996" y="107.49625187406298"/>
         </scene>
         <!--User Map-->
         <scene sceneID="rPj-0d-k7J">
@@ -321,4 +404,7 @@
             <point key="canvasLocation" x="1793.5999999999999" y="109.74512743628186"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="homeless" width="300" height="180"/>
+    </resources>
 </document>

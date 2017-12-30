@@ -11,15 +11,9 @@ import UIKit
 
 class Dashboard: BaseViewController {
     
-    @IBOutlet weak var showMapButton: UIButton!
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.addSlideMenuButton()
         print("In dashboard view")
-    }
-    
-    @IBAction func showUserMap(){
-        performSegue(withIdentifier: "dashToMap", sender: self)
     }
 }
