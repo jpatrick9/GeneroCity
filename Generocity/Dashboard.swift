@@ -11,9 +11,11 @@ import UIKit
 
 class Dashboard: BaseViewController {
     
+    @IBOutlet weak var imageView: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
         self.addSlideMenuButton()
         print("In dashboard view")
+        imageView.contentMode = .scaleAspectFit
     }
 }
